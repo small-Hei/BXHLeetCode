@@ -15,6 +15,8 @@
 		555FB31D2500D84200FE8DC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555FB31B2500D84200FE8DC1 /* LaunchScreen.storyboard */; };
 		555FB3282500D84200FE8DC1 /* BXHLeetCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FB3272500D84200FE8DC1 /* BXHLeetCodeTests.swift */; };
 		555FB3332500D84200FE8DC1 /* BXHLeetCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FB3322500D84200FE8DC1 /* BXHLeetCodeUITests.swift */; };
+		555FB3452500DA5900FE8DC1 /* SortTwoTheList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555FB3442500DA5900FE8DC1 /* SortTwoTheList.swift */; };
+		55947B972500F7180078719F /* OCSortTwoTheList.m in Sources */ = {isa = PBXBuildFile; fileRef = 55947B962500F7180078719F /* OCSortTwoTheList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		555FB32E2500D84200FE8DC1 /* BXHLeetCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BXHLeetCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		555FB3322500D84200FE8DC1 /* BXHLeetCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BXHLeetCodeUITests.swift; sourceTree = "<group>"; };
 		555FB3342500D84200FE8DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555FB3442500DA5900FE8DC1 /* SortTwoTheList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTwoTheList.swift; sourceTree = "<group>"; };
+		555FB3462500EF5200FE8DC1 /* BXHLeetCode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BXHLeetCode-Bridging-Header.h"; sourceTree = "<group>"; };
+		55947B952500F7180078719F /* OCSortTwoTheList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSortTwoTheList.h; sourceTree = "<group>"; };
+		55947B962500F7180078719F /* OCSortTwoTheList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSortTwoTheList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		555FB30F2500D84000FE8DC1 /* BXHLeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				555FB3412500D9A800FE8DC1 /* oc */,
+				555FB3402500D99C00FE8DC1 /* swift */,
 				555FB3102500D84000FE8DC1 /* AppDelegate.swift */,
 				555FB3122500D84000FE8DC1 /* SceneDelegate.swift */,
 				555FB3142500D84000FE8DC1 /* ViewController.swift */,
+				555FB3462500EF5200FE8DC1 /* BXHLeetCode-Bridging-Header.h */,
 				555FB3162500D84000FE8DC1 /* Main.storyboard */,
 				555FB3192500D84200FE8DC1 /* Assets.xcassets */,
 				555FB31B2500D84200FE8DC1 /* LaunchScreen.storyboard */,
@@ -126,6 +135,39 @@
 				555FB3342500D84200FE8DC1 /* Info.plist */,
 			);
 			path = BXHLeetCodeUITests;
+			sourceTree = "<group>";
+		};
+		555FB3402500D99C00FE8DC1 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				555FB3422500D9CD00FE8DC1 /* 25合并两个排序的链表 */,
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		555FB3412500D9A800FE8DC1 /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				555FB3432500D9F500FE8DC1 /* 25合并两个排序的链表 */,
+			);
+			path = oc;
+			sourceTree = "<group>";
+		};
+		555FB3422500D9CD00FE8DC1 /* 25合并两个排序的链表 */ = {
+			isa = PBXGroup;
+			children = (
+				555FB3442500DA5900FE8DC1 /* SortTwoTheList.swift */,
+			);
+			path = "25合并两个排序的链表";
+			sourceTree = "<group>";
+		};
+		555FB3432500D9F500FE8DC1 /* 25合并两个排序的链表 */ = {
+			isa = PBXGroup;
+			children = (
+				55947B952500F7180078719F /* OCSortTwoTheList.h */,
+				55947B962500F7180078719F /* OCSortTwoTheList.m */,
+			);
+			path = "25合并两个排序的链表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +238,7 @@
 				TargetAttributes = {
 					555FB30C2500D84000FE8DC1 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					555FB3222500D84200FE8DC1 = {
 						CreatedOnToolsVersion = 11.6;
@@ -259,8 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55947B972500F7180078719F /* OCSortTwoTheList.m in Sources */,
 				555FB3152500D84000FE8DC1 /* ViewController.swift in Sources */,
 				555FB3112500D84000FE8DC1 /* AppDelegate.swift in Sources */,
+				555FB3452500DA5900FE8DC1 /* SortTwoTheList.swift in Sources */,
 				555FB3132500D84000FE8DC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +479,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = BXHLeetCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,6 +489,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = baishuang.BXHLeetCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yit/Desktop/BXHLeetCode/BXHLeetCode/BXHLeetCode-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,7 +500,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = BXHLeetCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = baishuang.BXHLeetCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yit/Desktop/BXHLeetCode/BXHLeetCode/BXHLeetCode-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
